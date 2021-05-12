@@ -19,7 +19,7 @@ const authProvider = {
             if(response.status === 200){
                 console.log(response);
                 localStorage.setItem('auth', JSON.stringify(response.data.data));
-                localStorage.setItem('token', response.data.data.token);
+                localStorage.setItem('token', response.data.token);
                 return Promise.resolve();
             }
         })

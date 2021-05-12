@@ -37,9 +37,9 @@ const dataProvider = jsonServerProvider('http://localhost:8080/api/admin', httpC
 const App = () => (
     <Admin dashboard={Dashboard} authProvider={authProvider} dataProvider={dataProvider}>
 
-        <Resource name="homestay" list={HomestaytList} icon={HomeRoundedIcon} />
+        <Resource name="ad-homestay" list={HomestaytList} icon={HomeRoundedIcon} />
         <Resource name="homestay-utility-type" list={UtilityList} create={UtilityCreate} edit={UtilityEdit} icon={AddBoxIcon} />
-        <Resource name="homestay-type" list={HsTypeList} create={HsTypeCreate} edit={HsTypeEdit} icon={HomeWork} />
+        <Resource name="ad-homestay-type" list={HsTypeList} create={HsTypeCreate} edit={HsTypeEdit} icon={HomeWork} />
         <Resource name="homestay-policy-type" list={HsPolicyTypeList} create={HsPolicyTypeCreate} edit={HsPolicyTypeEdit} icon={PolicyIcon} />
         <Resource name="clients" list={ClientList} icon={GroupIcon} />
         <Resource name="hosts" list={HostList} icon={GroupIcon} />
